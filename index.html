@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equix="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel's Professional Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8298259344.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="row1">
+                <div class="header-col-1">
+                <nav>
+                    <img src="images/identity_logo.png" class="logo">
+                    <ul id="sideMenu">
+                        <li><a href="#header">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#services">SERVICES</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                        <i class="fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p><span>IAM Engineer/Developer</span></p>
+                    <h1>Emmanuel Heron-Vortes<br><span>Chicago</span></h1>
+                </div>
+                 </div>
+                 <div class="header-col-2">
+
+                </div>
+            </div>
+      </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row2">
+                <div class="about-col-1">
+                    <img src="images/self-pic2.JPG">
+                </div>
+                <div class="about-col-2">
+                        <h1 class="subtitle">About Me</h1>
+                        <p> I'm an IAM Engineer/Developer from Chicago, operating within the intricate and challenging landscape of Identity Access Management (IAM). 
+                            Harnessing an array of advanced technologies, I've built robust Single Sign-On (SSO) solutions using SAML and ForgeRock AM/DS, and have applied my Java 
+                            expertise to customize a deployment of SailPoint IdentityIQ, a leading IAM solution. At the intersection of technology and philosophy, I ponder 
+                            questions like 'What defines a digital identity?' and 'How is such an identity best established and authenticated?'. This intellectual curiosity propels my 
+                            work. I strive for tailored solution design, continuous process improvements, and keeping pace with the evolving tech ecosystem through relentless 
+                            learning. In my world, IAM engineering isn't just a job - it's where complexity meets innovation, efficiency, and the art of the technologically possible.</p>
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">IAM Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>IAM Solutions</span><br>SailPoint IdentityIQ/ForgeRock AM/Shibboleth SAML</li>
+                                    <li><span>Access Control and Policy Management</span><br>ForgeRock AM/DS</li>
+                                    <li><span>Single Sign-On (SSO) Technologies</span><br>SAML/ForgeRock</li>
+                                    <li><span>Directory and Group Management</span><br>Active Directory/LDAP/Apache Directory Studio/SailPoint IdentityIQ</li>
+                                    <li><span>IAM-Centric Programming</span><br>Java (SailPoint IdentityIQ Customization), JavaScript (Shibboleth IdP Enhancement), Python, Shell Scripting</li>
+                                    <li><span>Monitoring & Security</span><br>SolarWinds/Splunk</li>
+                                    <li><span>Automation/Orchestration</span><br>Cloudbees Jenkins/Cypress</li>
+                                </ul>
+                                </div>
+                                <div class="tab-contents" id="experience">
+                                    <ul>
+                                        <li><span><img src="images/1024px-Northwestern_University_seal.svg.png" alt=""><br>Northwestern University</span><br>IAM Engineer/Developer (2022 - Present)</li>
+                                        <li><span><img src="images/1024px-Northwestern_University_seal.svg.png" alt=""><br>Northwestern University</span><br>Associate IAM Engineer/Developer (2021 - 2022)</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-contents" id="education">
+                                    <ul>
+                                        <li><span><img src="images/LUC_vertical_black.png" alt="" class="luc_logo"><br>Loyola University Chicago</span><br>Master of Science in Computer Science - Software Engineering (2018 - 2021)</li>
+                                        <li><span><img src="images/LUC_vertical_black.png" alt="" class="luc_logo"><br>Loyola University Chicago</span><br>Certificate in Computer Science (2017 - 2018)</li>
+                                        <li><span><img src="images/SJC-Seal-White-Square-350px.png" alt=""><br>Saint John's College, Annapolis</span><br>Bachelor of Arts in Liberal Arts - Dual Major Mathematics and Philosophy (2005 - 2009)</li>
+                                    </ul>
+                                </div>
+                </div>
+                <div id="services">
+                    <div class="container">
+                        <h1 class="subtitle">My Services</h1>
+                        <div class="services-list">
+                            <div>
+                                <i class="fa-solid fa-code"></i>
+                                <h2>IAM-Centric Programming</h2>
+                                <p>Customizing IAM solutions with Java (for SailPoint IdentityIQ), JavaScript (for Shibboleth IdP), Python, and Shell Scripting to enhance 
+                                    functionalities and user experiences.</p>
+                                    <a href="#">Learn more</a>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-fingerprint"></i>
+                                <h2>IAM Solutions Design and Implementation</h2>
+                                <p>Expertise in the end-to-end design and deployment of IAM solutions using SailPoint IdentityIQ, ForgeRock AM, DS, and Shibboleth SAML. From initial conceptualization to successful implementation, I help build robust IAM systems.</p>
+                                <a href="#">Learn more</a>
+                             </div>
+                             <div>
+                                <i class="fa-regular fa-id-badge"></i>
+                                <h2>Access Control and Policy Management</h2>
+                                <p>With a deep understanding of access control mechanisms, I employ tools such as ForgeRock AM and LDAP to enforce secure and effective access policies, contributing to enhanced system security and user management.</p>
+                                <a href="#">Learn more</a>
+                             </div>
+                             <div>
+                                <i class="fa-regular fa-handshake"></i>
+                                <h2>SSO Technologies</h2>
+                                <p>Expert in employing Single Sign-On technologies such as SAML and ForgeRock, I ensure seamless and secure user experiences across platforms, reducing complexity and boosting productivity.</p>
+                                <a href="#">Learn more</a>
+                             </div>                             
+                             
+                        </div>
+                    </div>
+                </div>
+                <div id="contact">
+                    <div class="container">
+                        <div class="row2">
+                            <div class="contact-left">
+                                <h1 class="subtitle">Contact Me</h1>
+                                <p><i class="fa-regular fa-envelope"></i> m.emmanuel.heron@gmail.com</p>
+                                <p><i class="fa-solid fa-phone"></i> (773)344-0130</p>
+                                <div class="social-icons">
+                                    <a href="https://www.linkedin.com/in/emmanuel-heron-vortes-0981511a/"><i class="fa-brands fa-linkedin"></i></a>
+                                    <a href="https://github.com/emheron"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://www.instagram.com/mannieheron/"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                                <a href="images/Emmanuel_Heron-Vortes_VisualCV_Resume.pdf" download class="btn btn2">Download Resume</a>
+                            </div>
+                            <div class="contact-right">
+                                <form name="submit-to-google-sheet">
+                                    <input type="text" name="Name" placeholder="Your Name" required>
+                                    <input type="email" name="Email" placeholder="Your Email" required>
+                                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                                    <button class="btn btn2" type="submit">Submit</button>
+                                </form>
+                                <span id="msg"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p><i class="fa-solid fa-copyright"></i> Emmanuel Heron-Vortes</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    var tabLinks = document.getElementsByClassName("tab-links");
+    var tabContents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabName){
+        for(tabLink of tabLinks){
+            tabLink.classList.remove("active-link")
+        }
+        for(tabContent of tabContents){
+            tabContent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sideMenu = document.getElementById("sideMenu");
+
+    function openMenu(){
+        sideMenu.style.right = "0";
+    }
+
+    function closeMenu(){
+        sideMenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzHcU2nfPs8oCxXGh74PGFVMcSo7Map5sgp9gnqIRFNWAY2rLs2rgqdSK-mfJ3XLhuK/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+  
+</html>
