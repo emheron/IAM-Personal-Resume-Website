@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equix="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emmanuel's Professional Website</title>
     <link rel="stylesheet" href="style.css">
@@ -18,11 +18,11 @@
                 <nav>
                     <img src="images/identity_logo.png" class="logo">
                     <ul id="sideMenu">
-                        <li><a href="#header">HOME</a></li>
-                        <li><a href="#about">ABOUT</a></li>
-                        <li><a href="#services">SERVICES</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
-                        <i class="fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
+                        <li><a class="nav-link" href="#header">HOME</a></li>
+                        <li><a class="nav-link" href="#about">ABOUT</a></li>
+                        <li><a class="nav-link" href="#services">SERVICES</a></li>
+                        <li><a class="nav-link" href="#contact">CONTACT</a></li>
+                        <i class="fa-solid fa-circle-xmark close-menu" onclick="closeMenu()"></i>
                     </ul>
                     <i class="fa-solid fa-bars" onclick="openMenu()"></i>
                 </nav>
@@ -173,6 +173,12 @@
     function closeMenu(){
         sideMenu.style.right = "-200px";
     }
+
+    var navLinks = document.querySelectorAll(".nav-link");
+
+    navLinks.forEach(function(link) {
+        link.addEventListener('click', closeMenu);
+    });
 
 </script>
 <script>
